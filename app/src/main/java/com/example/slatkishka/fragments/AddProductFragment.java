@@ -58,7 +58,7 @@ public class AddProductFragment extends Fragment {
 
         // патека до Storage за слики и Database за текст
         storageReference = FirebaseStorage.getInstance().getReference("product_images");
-        databaseReference = FirebaseDatabase.getInstance("https://slatkishka-default-rtdb.europe-west1.firebasedatabase.app")
+        databaseReference = FirebaseDatabase.getInstance("...")
                 .getReference("Businesses").child(loggedBusinessUser).child("Products");
 
         // подготовка на Launcher за галерија
