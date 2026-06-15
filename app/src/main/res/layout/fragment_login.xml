@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/background_slatkishka">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:background="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="7dp"
+        />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:background="@color/pink_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="корисничко име"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="лозинка"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:hint="запамти ме"
+        android:textColor="#C2185B" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Најави се!"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E91E63"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvGoToSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Немаш профил? Регистрирај се сега!"
+        android:textColor="#C2185B"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

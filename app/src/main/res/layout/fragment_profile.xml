@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#FAFAFA">
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profilna_default"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvProfileUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Корисничко име"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_dark"/>
+
+    <TextView
+        android:id="@+id/tvProfileRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Улога: Клиент"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/tvProfileFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Име и Презиме"
+        android:textSize="18sp"
+        android:textColor="@color/pink_primary"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvProfilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Телефон: 07X-XXX-XXX"
+        android:textSize="16sp"
+        android:textColor="@color/pink_primary"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGoToAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Прикачи нов производ ➕"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Одјави се"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Избриши профил"
+        android:backgroundTint="#FF2222"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

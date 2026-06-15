@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal"
+    android:background="#FFF5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нов профил"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/etSignupUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="корисничко име"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <EditText
+        android:id="@+id/etProfileFullName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="име и презиме"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="телефон: 07X-XXX-XXX"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <EditText
+        android:id="@+id/etSignupPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="лозинка"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background_normal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Избери тип на профил:"
+        android:textColor="#C2185B"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/business_categories"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/rgRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Клиент"
+            android:textColor="#333333"
+            android:checked="true"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/rbBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Бизнис"
+            android:textColor="#333333"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Регистрирај се!"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

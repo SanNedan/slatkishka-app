@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Slatkishka</string>
+    <string-array name="business_categories">
+        <item>Избери категорија...</item>
+        <item>Појадок</item>
+        <item>Ручек</item>
+        <item>Вечера</item>
+        <item>Благо</item>
+        <item>Кафе</item>
+    </string-array>
+</resources>
