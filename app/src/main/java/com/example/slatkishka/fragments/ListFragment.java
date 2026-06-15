@@ -73,7 +73,7 @@ public class ListFragment extends Fragment {
     }
 
     private void loadGroupedDataFromFirebase() {
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance("https://slatkishka-default-rtdb.europe-west1.firebasedatabase.app/")
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance("...")
                 .getReference("Businesses");
 
         databaseReference.addValueEventListener(new ValueEventListener() {
