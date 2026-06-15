@@ -72,7 +72,7 @@ public class SignupFragment extends Fragment {
             if (role.equals("business")) {
                 // Firebase за бизнис
                 BusinessModel businessObj = new BusinessModel(name, category);
-                FirebaseDatabase.getInstance("https://slatkishka-default-rtdb.europe-west1.firebasedatabase.app/")
+                FirebaseDatabase.getInstance("...")
                         .getReference("Businesses").child(user).setValue(businessObj)
 
                         .addOnSuccessListener(aVoid -> {
