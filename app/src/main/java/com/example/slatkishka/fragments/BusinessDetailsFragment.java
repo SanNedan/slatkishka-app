@@ -99,7 +99,7 @@ public class BusinessDetailsFragment extends Fragment {
             Toast.makeText(getContext(), "Грешка: Не е пронајдено име на бизнис!", Toast.LENGTH_SHORT).show();
         }
 
-        ordersRef = FirebaseDatabase.getInstance("https://slatkishka-default-rtdb.europe-west1.firebasedatabase.app")
+        ordersRef = FirebaseDatabase.getInstance("...")
                 .getReference("Orders");
 
         // поднесување на нарачката при клик на копчето
